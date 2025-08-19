@@ -2,17 +2,17 @@
 
 
 ## Creating AWS Dynamo Table
-Table name: employee_info
+Table name: employee_info  
 Table settings: Default settings
 
 
 ## Creating AWS Lambda Function
-Author from Scratch
-Function name: api-processing
-Runtime: Python3.11
-Execution Role: Create a new role from AWS Policy templates.
-Role name: serverless-api-demo 
-Permissions: DynamoDBFullAccess, CloudWatchLogFullAcess, AWSLambdaExecutionRole(Added by default)
+Author from Scratch  
+Function name: api-processing  
+Runtime: Python3.11  
+Execution Role: Create a new role from AWS Policy templates.  
+Role name: serverless-api-demo  
+Permissions: DynamoDBFullAccess, CloudWatchLogFullAcess, AWSLambdaExecutionRole(Added by default)  
 
 ## Creating API Gateway
 Type: REST API
@@ -88,3 +88,4 @@ Select lambda function: api-processing
 Stage: New Stage
 
 Stage name: production
+

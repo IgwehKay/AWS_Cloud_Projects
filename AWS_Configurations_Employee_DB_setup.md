@@ -1,11 +1,12 @@
-**Employee DB setup
-**
-Creating AWS Dynamo Table
+# Employee DB setup
+
+
+## Creating AWS Dynamo Table
 Table name: employee_info
 Table settings: Default settings
 
 
-Creating AWS Lambda Function
+## Creating AWS Lambda Function
 Author from Scratch
 Function name: api-processing
 Runtime: Python3.11
@@ -13,20 +14,20 @@ Execution Role: Create a new role from AWS Policy templates.
 Role name: serverless-api-demo 
 Permissions: DynamoDBFullAccess, CloudWatchLogFullAcess, AWSLambdaExecutionRole(Added by default)
 
-Creating API Gateway
+## Creating API Gateway
 Type: REST API
 Build configurations:
 API Name: serverless-demo
 API endpoint type: Regional
 
-Creating API Gateway Resources (for the serverless-demo API)
+## Creating API Gateway Resources (for the serverless-demo API)
 Resource1
 Resource details:
 Path: /
 Resource name: status
 Check the CORS (Cross Origin Resource Sharing) box 
 
-Creating method for the status resource
+### Creating method for the status resource
 Method1 details:
 Type: GET
 Integration Type: Lambda function
@@ -40,7 +41,7 @@ Path: /
 Resource name: employee
 Check the CORS (Cross Origin Resource Sharing) box 
 
-Creating method for the employee resource
+### Creating method for the employee resource
 Method1 details:
 Type: GET
 Integration Type: Lambda function
@@ -75,7 +76,7 @@ Path: /
 Resource name: employees
 Check the CORS (Cross Origin Resource Sharing) box 
 
-Creating method for the employees resource
+### Creating method for the employees resource
 Method1 details:
 Type: GET
 Integration Type: Lambda function
@@ -83,7 +84,7 @@ Activate the Lambda Proxy integration button
 Region: us-east-1
 Select lambda function: api-processing
 
-Deploy API
+## Deploy API
 Stage: New Stage
 
 Stage name: production

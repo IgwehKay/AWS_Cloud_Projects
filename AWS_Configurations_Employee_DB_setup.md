@@ -1,5 +1,5 @@
-Employee DB setup
-
+**Employee DB setup
+**
 Creating AWS Dynamo Table
 Table name: employee_info
 Table settings: Default settings
@@ -85,4 +85,5 @@ Select lambda function: api-processing
 
 Deploy API
 Stage: New Stage
+
 Stage name: production
